@@ -1,0 +1,24 @@
+.footer {
+
+    background-color: var(--secondary-bg-color);
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+.link-footer {
+
+    text-decoration: none;
+}
+
+.footer-item {
+
+    margin-bottom: 9px;
+
+}
+
+.footer-item:last-child {
+
+    margin-bottom: 0;
+}

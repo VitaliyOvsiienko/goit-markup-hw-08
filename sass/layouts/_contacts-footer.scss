@@ -1,0 +1,37 @@
+.adress {
+    
+    color: var(--primery-bg-color);
+
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: var(--primery-letter-spacing);
+    font-style: normal;
+    margin-left: auto;
+   
+}
+
+
+.contacts-footer .connection {
+   
+    color: rgba(255, 255, 255, 0.6);
+
+    font-style: normal;
+
+    margin-left: auto;
+    
+}
+
+.contacts-footer {
+
+    transition: color var(--anim-slow);
+
+&:hover,
+&:focus {
+    
+    color: var(--primery-accent);
+}   
+
+}
+
+
