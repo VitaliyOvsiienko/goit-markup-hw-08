@@ -31,7 +31,6 @@ ul {
 
 img {
   display: block;
-  width: 100%;
 }
 
 .body {
@@ -244,14 +243,30 @@ img {
 }
 
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.features__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
 }
 .features__title {
   font-weight: 700;
@@ -273,7 +288,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 270px;
+  max-width: 450px;
   height: 120px;
   margin-bottom: 30px;
   -webkit-box-align: center;
@@ -346,22 +361,33 @@ img {
 }
 .team__img {
   margin-bottom: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.team__item {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 450px;
+  height: 480px;
 }
 @media screen and (min-width: 768px) {
+  .team__img {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__img {
+    width: 270px;
+    height: 260px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .team__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -372,8 +398,16 @@ img {
     gap: 30px;
   }
 }
+.team__card {
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .team {
+    min-width: 354px;
+  }
+}
 @media screen and (min-width: 1200px) {
-  .team__item {
+  .team {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
