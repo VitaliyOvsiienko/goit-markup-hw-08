@@ -1,31 +1,24 @@
 .features {
 
-    padding-top: 60px;
-    padding-bottom: 60px;
-
- 
+        padding-top: 60px;
+        padding-bottom: 60px;
 
     @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-        }
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     &__item {
-
-
-        @media screen and (width: 480px) {
-
-            }
         
-            @media screen and (min-width: 768px) {
-            display: flex;
-            gap: 30px;
-            }
+    @media screen and (min-width: 768px) {
+       display: flex;
+        gap: 30px;
+    }
         
-            @media screen and (min-width: 1200px) {
-            display: flex;
-                gap: 30px;
-            }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 30px;
+    }
     }
 
 
@@ -38,7 +31,14 @@
 
         text-transform: uppercase;
         margin-bottom: 10px;
+
+        @media screen and (max-width: 480px) {
+            
+        text-align: center;
     }
+    }
+
+
 
     &__text {
 
@@ -47,20 +47,41 @@
         font-size: 14px;
         line-height: 1.4;
         letter-spacing: var(--primery-letter-spacing);
+
+        
     }
 
 }
 
 .features__icon__list {
-    background-color: var(--team-bg-color);
 
-    display: flex;
-    max-width: 450px;
-    height: 120px;
+    
+        
+        background-color: var(--team-bg-color);
 
-    margin-bottom: 30px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
+        display: flex;
+        width: 450px;
+        height: 120px;
 
+        margin-bottom: 30px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+
+
+        @media screen and (min-width: 768px) {
+        
+       width: 354px;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+
+}
+
+
+
+    
 }

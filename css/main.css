@@ -70,7 +70,7 @@ img {
 }
 @media screen and (width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -276,6 +276,11 @@ img {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 480px) {
+  .features__title {
+    text-align: center;
+  }
+}
 .features__text {
   color: var(--secondary-text-color);
   font-size: 14px;
@@ -288,7 +293,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 450px;
+  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   -webkit-box-align: center;
@@ -299,7 +304,11 @@ img {
           justify-content: center;
   border-radius: 4px;
 }
-
+@media screen and (min-width: 768px) {
+  .features__icon__list {
+    width: 354px;
+  }
+}
 .work {
   padding-bottom: 94px;
 }
