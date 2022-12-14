@@ -8,14 +8,12 @@
     display: flex;
     gap: 50px;
 
-}
-
-.link {
-
-    padding-top: 32px;
-    padding-bottom: 32px;
+    @media screen and (max-width: 768px) {
+           display: none;
+        }
 
 }
+
 
 .nav-list .link {
 

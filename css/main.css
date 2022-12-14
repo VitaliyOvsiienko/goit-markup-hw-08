@@ -5,7 +5,7 @@
   --secondary-bg-color: #2F303A;
   --white-bg-color: #F5F5F5;
   --team-bg-color: #F5F4FA;
-  --primery-accent: #2196F3;
+  --primery-accent: hsl(207, 90%, 54%);
   --header-logo: #000000;
   --soc-icon: #AFB1B8;
   --primery-letter-spacing: 0.03em;
@@ -101,13 +101,150 @@ img {
   color: var(--header-logo);
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: var(--primery-letter-spacing);
-  padding-top: 24px;
+  padding-top: 16px;
   margin-right: 93px;
-  padding-bottom: 25px;
+  padding-bottom: 16px;
   margin-left: 0;
+}
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    font-size: 26px;
+    line-height: 1.2;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.burger-menu-btn {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  z-index: 10;
+}
+@media screen and (min-width: 768px) {
+  .burger-menu-btn {
+    display: none;
+  }
+}
+
+.burger-menu-open {
+  opacity: 0;
+}
+
+.no-scroll .burger-menu-open {
+  opacity: 1;
+}
+
+.no-scroll .burger-menu-close {
+  display: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primery-bg-color);
+  padding: 48px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobile-menu-nav {
+  margin-bottom: auto;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+}
+
+.mobile-menu-nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: var(--secondary-letter-spacing);
+  color: var(--primery-text-color);
+}
+
+.mobile-menu-nav-link:focus {
+  color: var(--primery-accent);
+}
+
+.mobile-menu-contacts {
+  margin-bottom: 64px;
+}
+
+.mobile-menu-contacts-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-tel-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: var(--secondary-letter-spacing);
+  color: var(--primery-accent);
+}
+
+.mobile-menu-mail-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: var(--secondary-letter-spacing);
+  color: var(--secondary-text-color);
+}
+
+.mobile-menu-soc {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: var(--secondary-letter-spacing);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mobile-menu-soc-link {
+  text-decoration: none;
+  color: var(--primery-accent);
+}
+
+.mobile-menu-soc-item:not(:last-child) .mobile-menu-soc-link {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .nav-list {
@@ -120,10 +257,10 @@ img {
   display: flex;
   gap: 50px;
 }
-
-.link {
-  padding-top: 32px;
-  padding-bottom: 32px;
+@media screen and (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
 }
 
 .nav-list .link {
@@ -165,6 +302,11 @@ img {
           align-items: center;
   -webkit-transition: color var(--anim-slow);
   transition: color var(--anim-slow);
+}
+@media screen and (max-width: 768px) {
+  .connect {
+    display: none;
+  }
 }
 
 .contacts-list {
