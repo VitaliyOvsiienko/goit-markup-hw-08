@@ -20,7 +20,11 @@
 
     margin-bottom: 20px;
 
+    
+
+    @media screen and (max-width: 1200px) {
     text-align: center;
+        }
 }
 
 }

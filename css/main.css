@@ -1382,7 +1382,11 @@ img {
   letter-spacing: var(--primery-letter-spacing);
   text-transform: uppercase;
   margin-bottom: 20px;
-  text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  .subscribe-title {
+    text-align: center;
+  }
 }
 
 .subscribe-input {
