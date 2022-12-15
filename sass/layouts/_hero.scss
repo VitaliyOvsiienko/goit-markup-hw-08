@@ -1,34 +1,54 @@
 .hero {
-
-    // max-width: 1600px;
-    // height: 600px;
-
-    background-color: #C4C4C4;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/bcg-img.jpg);
-
-    background-position: center;
-    background-size: cover;
-
+    
     padding-top: 118px;
     padding-bottom: 118px;
     margin: 0 auto;
 
-    @media screen and (min-width: 480px) {
-            max-width: 100%;
-            height: 400px;
-            
-        }
+    background-color: #C4C4C4;
+    background-position: center;
+    background-size: cover;
+    
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero-bcg/header-bcg-sm.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)),
+                        url(../images/hero-bcg/header-bcg-sm@2x.jpg);
+            }
+
     
         @media screen and (min-width: 768px) {
-            width: 100%;
-            height: 400px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/hero-bcg/header-bcg-md.jpg);
+
+                @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                                rgba(47, 48, 58, 0.4)),
+                            url(../images/hero-bcg/header-bcg-md@2x.jpg);
+                    }
         }
     
         @media screen and (min-width: 1200px) {
-            width: 100%;
-            height: 600px;
+
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../images/hero-bcg/header-bcg-lg.jpg);
+
+                    @media (min-device-pixel-ratio: 2),
+                        (min-resolution: 192dpi),
+                        (min-resolution: 2dppx) {
+                            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                                    rgba(47, 48, 58, 0.4)),
+                                url(../images/hero-bcg/header-bcg-lg@2x.jpg);
+                        }
+         
 
             padding-top: 200px;
             padding-bottom: 210px;
