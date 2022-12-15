@@ -5,7 +5,9 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    
+    .footer-list {
+        margin-bottom: 60px;
+    }
 
 }
 
@@ -18,9 +20,16 @@
 
     margin-bottom: 9px;
 
+    text-align: center;
+
+
+
+
 }
 
 .footer-item:last-child {
 
     margin-bottom: 0;
 }
+
+

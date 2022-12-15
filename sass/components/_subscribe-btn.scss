@@ -1,5 +1,7 @@
 .subscribe-btn {
 
+margin-left: 20px;
+   
     color: #FFFFFF;
     background-color: var(--primery-accent);
 
@@ -15,7 +17,18 @@
     cursor: pointer;
     border: none;
 
-    margin-left: 20px;
+    @media screen and (max-width: 1200px) {
+
+        display: block;
+
+        margin: 0 auto;
+ 
+          
+        }
+
+    
+
+
 
 
     transition: background-color var(--anim-slow), box-shadow var(--anim-slow);

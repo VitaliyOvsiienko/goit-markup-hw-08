@@ -8,8 +8,22 @@
     letter-spacing: var(--primery-letter-spacing);
     font-style: normal;
     margin-left: auto;
+
+    @media screen and (min-width: 1200px) {
+    
+           display: flex;
+        }
    
 }
+
+.link-footer {
+@media screen and (min-width: 1200px) {
+
+        display: flex;
+    }
+}
+
+
 
 
 .contacts-footer .connection {

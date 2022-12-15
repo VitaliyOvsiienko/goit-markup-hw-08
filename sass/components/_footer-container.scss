@@ -2,10 +2,25 @@
     
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
 
     @media screen and (max-width: 768px) {
             
         display: block;
         }
 
+
 }
+
+.contacts {
+    @media screen and (min-width: 768px) {
+    
+            width: 50%;
+        }
+
+                @media screen and (min-width: 1200px) {
+        
+                    width: 25%
+                }
+}
+

@@ -1,3 +1,17 @@
+.contacts-soc {
+    
+    @media screen and (min-width: 768px) {
+    
+        width: 50%;
+        }
+
+                @media screen and (min-width: 1200px) {
+        
+                    width: 25%;
+                }
+}
+   
+
 .contacts-soc-title {
 
     color: var(--primery-bg-color);
@@ -7,15 +21,17 @@
     letter-spacing: var(--primery-letter-spacing);
     text-transform: uppercase;
     margin-bottom: 20px;
-    margin-left: 70px;
+    text-align: center;
 
 }
 
 .contacts-soc-list {
     display: flex;
     gap: 10px;
+    justify-content: center;
 
-    margin-left: 70px;
+    margin-bottom: 60px;
+
 
 }
 
@@ -40,6 +56,8 @@
     color: var(--primery-bg-color);
 
     transition: background-color var(--anim-slow);
+
+
 
 &:hover,
 &:focus {

@@ -799,6 +799,9 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer .footer-list {
+  margin-bottom: 60px;
+}
 
 .link-footer {
   text-decoration: none;
@@ -806,6 +809,7 @@ img {
 
 .footer-item {
   margin-bottom: 9px;
+  text-align: center;
 }
 
 .footer-item:last-child {
@@ -819,10 +823,9 @@ img {
   font-size: 24px;
   line-height: 1.16px;
   letter-spacing: var(--primery-letter-spacing);
-  margin-left: auto;
   display: block;
   margin-bottom: 28px;
-  margin-left: 163px;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .footer-logo {
@@ -831,6 +834,9 @@ img {
     line-height: 1.2px;
     text-align: center;
     letter-spacing: 0.03em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -842,6 +848,21 @@ img {
   letter-spacing: var(--primery-letter-spacing);
   font-style: normal;
   margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .adress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .link-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .contacts-footer .connection {
@@ -865,10 +886,34 @@ img {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
   .footer-container {
     display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-soc {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-soc {
+    width: 25%;
   }
 }
 
@@ -880,7 +925,7 @@ img {
   letter-spacing: var(--primery-letter-spacing);
   text-transform: uppercase;
   margin-bottom: 20px;
-  margin-left: 70px;
+  text-align: center;
 }
 
 .contacts-soc-list {
@@ -888,7 +933,10 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  margin-left: 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
 }
 
 .contacts-soc-item {
@@ -1319,7 +1367,12 @@ img {
 }
 
 .subscribe {
-  margin-left: 93px;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    width: 50%;
+  }
 }
 .subscribe-title {
   color: var(--primery-bg-color);
@@ -1329,21 +1382,27 @@ img {
   letter-spacing: var(--primery-letter-spacing);
   text-transform: uppercase;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .subscribe-input {
   color: var(--primery-bg-color);
   background-color: var(--secondary-bg-color);
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  margin-right: 12px;
   padding-left: 16px;
   -webkit-transition: var(--anim-slow);
   transition: var(--anim-slow);
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-input {
+    width: 358px;
+  }
 }
 .subscribe-input:focus {
   border-color: var(--primery-accent);
@@ -1351,6 +1410,7 @@ img {
 }
 
 .subscribe-btn {
+  margin-left: 20px;
   color: #FFFFFF;
   background-color: var(--primery-accent);
   width: 200px;
@@ -1362,11 +1422,16 @@ img {
   border-radius: 4px;
   cursor: pointer;
   border: none;
-  margin-left: 20px;
   -webkit-transition: background-color var(--anim-slow), -webkit-box-shadow var(--anim-slow);
   transition: background-color var(--anim-slow), -webkit-box-shadow var(--anim-slow);
   transition: background-color var(--anim-slow), box-shadow var(--anim-slow);
   transition: background-color var(--anim-slow), box-shadow var(--anim-slow), -webkit-box-shadow var(--anim-slow);
+}
+@media screen and (max-width: 1200px) {
+  .subscribe-btn {
+    display: block;
+    margin: 0 auto;
+  }
 }
 .subscribe-btn:hover, .subscribe-btn:focus {
   background-color: #188CE8;
