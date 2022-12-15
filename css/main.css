@@ -319,14 +319,9 @@ img {
   gap: 50px;
   color: var(--secondary-text-color);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .contacts-list {
     display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .contacts-list {
-    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -334,6 +329,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
   }
 }
 
@@ -863,7 +861,7 @@ img {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .footer-container {
     display: block;
   }
