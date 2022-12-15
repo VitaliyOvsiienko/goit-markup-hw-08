@@ -8,17 +8,19 @@
     line-height: 1.16;
     letter-spacing: var(--primery-letter-spacing);
 
-    padding-top: 16px;
-    margin-right: 93px;
-    padding-bottom: 16px;
+    // padding-top: 16px;
+    
+    // padding-bottom: 16px;
     margin-left: 0;
 
     @media screen and (min-width: 1200px) {
         font-size: 26px;
         line-height: 1.2;
 
-        padding-top: 24px;
-        padding-bottom: 25px;
+        // padding-top: 24px;
+        // padding-bottom: 25px;
+
+        margin-right: 93px;
         }
 
 
