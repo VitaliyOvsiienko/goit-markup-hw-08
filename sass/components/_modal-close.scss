@@ -16,6 +16,11 @@
     border-radius: 50%;
     cursor: pointer;
 
+&:hover {
+
+        fill: var(--primery-accent);
+    }
+
 }
 
 .modal-close-icon {
@@ -24,11 +29,6 @@
     cursor: pointer;
 
     transition: fill var(--anim-slow);
-
-&:hover {
-
-    fill: var(--primery-accent);
-}
 
 }
 

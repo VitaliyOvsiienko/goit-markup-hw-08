@@ -10,14 +10,16 @@
             flex-direction: row;
     
         }
-    
-    
-        @media screen and (min-width: 1200px) {
-    
 
-    
-    
+     @media screen and (max-width: 767px) {
+        
+            flex-direction: row;
+            justify-content: center;
+        
         }
+    
+    
+       
 
 &-wrap {
     
@@ -28,13 +30,22 @@
     padding: 20px 24px;
 
     flex-grow: 1;
+    
+
+
 }
 
 &-card {
 
+
+
+    
+
     @media screen and (min-width: 768px) {
     
             width: calc((100% - 30px) / 2);
+
+
     
         }
 

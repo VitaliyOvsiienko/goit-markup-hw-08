@@ -1083,6 +1083,17 @@ img {
             flex-direction: row;
   }
 }
+@media screen and (max-width: 767px) {
+  .info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .info-wrap {
   border-bottom: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
@@ -1235,15 +1246,15 @@ img {
   border-radius: 50%;
   cursor: pointer;
 }
+.modal-close:hover {
+  fill: var(--primery-accent);
+}
 
 .modal-close-icon {
   color: var(--header-logo);
   cursor: pointer;
   -webkit-transition: fill var(--anim-slow);
   transition: fill var(--anim-slow);
-}
-.modal-close-icon:hover {
-  fill: var(--primery-accent);
 }
 
 .is-hidden {
