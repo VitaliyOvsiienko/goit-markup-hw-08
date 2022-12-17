@@ -508,7 +508,7 @@ img {
 .features__text {
   color: var(--secondary-text-color);
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.7;
   letter-spacing: var(--primery-letter-spacing);
 }
 .features .features__icon__item {
@@ -605,7 +605,6 @@ img {
 }
 .team__img {
   width: 100%;
-  margin-bottom: 30px;
 }
 .team__item {
   -ms-flex-wrap: wrap;
@@ -661,6 +660,10 @@ img {
   margin-bottom: 16px;
 }
 
+.team-wrap {
+  padding: 30px 0;
+}
+
 .team-soc__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -669,7 +672,6 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
-  margin-bottom: 30px;
 }
 
 .team-soc__item {
@@ -811,14 +813,6 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer .footer-list {
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .footer {
-    padding-bottom: 0;
-  }
-}
 
 .link-footer {
   text-decoration: none;
@@ -838,7 +832,7 @@ img {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.16px;
+  line-height: 1.16;
   letter-spacing: var(--primery-letter-spacing);
   display: block;
   margin-bottom: 28px;
@@ -913,6 +907,9 @@ img {
   }
 }
 
+.contacts {
+  margin-bottom: 60px;
+}
 @media screen and (min-width: 768px) {
   .contacts {
     width: 50%;
@@ -921,9 +918,13 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts {
     width: 25%;
+    margin-bottom: 0;
   }
 }
 
+.contacts-soc {
+  margin-bottom: 60px;
+}
 @media screen and (min-width: 768px) {
   .contacts-soc {
     width: 50%;
@@ -932,6 +933,7 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts-soc {
     width: 25%;
+    margin-bottom: 0;
   }
 }
 
