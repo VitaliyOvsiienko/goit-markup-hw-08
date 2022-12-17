@@ -1,19 +1,17 @@
 .nav-list {
 
+    margin-left: 93px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: var(--secondary-letter-spacing);
-
+    gap: 50px;
     display: flex;
     
     @media screen and (max-width: 767px) {
            display: none;
         }
 
-    @media screen and (min-width: 1200px) {
-            gap: 50px;
-    }
 
 }
 
@@ -48,7 +46,7 @@
 
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -24px;
     left: 0;
 
     transform: translateY(9px);

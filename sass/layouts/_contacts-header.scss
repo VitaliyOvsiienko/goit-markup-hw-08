@@ -6,15 +6,6 @@
     transition: color var(--anim-slow);
 }
 
-.first-link {
-
-    margin-bottom: 10px;
-
-    @media screen and (min-width: 1200px) {
-    
-            margin-bottom: 0;
-        }
-}
 
 
 
@@ -27,7 +18,9 @@
     letter-spacing: var(--secondary-letter-spacing);
 
     margin-left: auto;
-    gap: 50px;
+    display: flex;
+        flex-direction: column;
+        gap: 10px;
 
    
 
@@ -43,8 +36,10 @@
                         }
 
                                                 @media screen and (min-width: 1200px) {
-                                                    display: flex;
-                                                    justify-content: end;
+                                                    
+                                                    flex-direction: row;
+                                                    gap: 40px;
+                    
                                                 }
 
 

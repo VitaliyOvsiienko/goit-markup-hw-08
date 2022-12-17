@@ -88,6 +88,10 @@
   
 }
 
+.mobile-menu-nav-link.current {
+color: var(--primery-accent);
+}
+
 .mobile-menu-nav-link:focus {
     color: var(--primery-accent);
 }

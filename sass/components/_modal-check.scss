@@ -14,7 +14,7 @@
 
 }
 
-.check-text span {
+.check-text .check-box {
 
     display: flex;
     align-items: center;
@@ -34,10 +34,15 @@
 
 }
 
-.modal-check:checked+.check-text span {
+.modal-check:checked+.check-text .check-box {
 
     background-color: var(--primery-accent);
     fill: var(--primery-bg-color);
     border: none;
 
+}
+
+.modal-check:focus+.check-text .check-box {
+
+    border-color: var(--primery-accent);
 }

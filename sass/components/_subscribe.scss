@@ -4,12 +4,14 @@
 
     @media screen and (min-width: 1200px) {
     
-            width: 50%;
+            width: auto;
+            margin-left: auto;
         }
  
 
 &-title {
-
+    
+    text-align: center;
     color: var(--primery-bg-color);
 
     font-weight: 700;
@@ -22,14 +24,25 @@
 
     
 
-    @media screen and (max-width: 1200px) {
-    text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+
         }
 }
 
 }
 
+.subscribe-form {
+     
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            gap: 12px;
+        }
+}
+
 .subscribe-input {
+
+    display: block;
 
     color: var(--primery-bg-color);
     background-color: var(--secondary-bg-color);
@@ -48,11 +61,21 @@
 
     margin-bottom: 20px;
 
+    @media screen and (min-width: 768px) {
+    
+            max-width: 450px;
+            margin: 0 auto 30px;
+        }
+
 
     @media screen and (min-width: 1200px) {
     
             width: 358px;
+
+            margin: 0;
         }
+
+                
 
 
 

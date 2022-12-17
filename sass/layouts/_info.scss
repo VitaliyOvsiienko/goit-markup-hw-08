@@ -3,17 +3,50 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+    
+            flex-direction: row;
+    
+        }
+    
+    
+        @media screen and (min-width: 1200px) {
+    
+
+    
+    
+        }
 
 &-wrap {
     
     border-bottom: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
+
+    padding: 20px 24px;
+
+    flex-grow: 1;
 }
 
 &-card {
 
-    width: calc((100% - 60px) / 3);
+    @media screen and (min-width: 768px) {
+    
+            width: calc((100% - 30px) / 2);
+    
+        }
+
+   
+
+    @media screen and (min-width: 1200px) {
+        
+        width: calc((100% - 60px) / 3);
+
+    }
+
+
 }
 
 &-img {
@@ -29,9 +62,8 @@
     line-height: 2;
     letter-spacing: 0.06em;
 
-    padding-top: 20px;
     margin-bottom: 4px;
-    margin-left: 24px;
+
 }
 
 &-text {
@@ -42,8 +74,6 @@
     line-height: 1.87;
     letter-spacing: var(--primery-letter-spacing);
 
-    margin-bottom: 20px;
-    margin-left: 24px;
 }
 
 }
@@ -51,9 +81,13 @@
 .info-link {
 
     text-decoration: none;
-    display: block;
+    display: flex;
+    flex-direction: column;
 
     transition: box-shadow var(--anim-slow);
+
+    height: 100%;
+
 
 &:hover {
 
@@ -71,8 +105,8 @@
     transform: translateY(100%);
     transition: transform var(--anim-slow);
 
-    padding-top: 63px;
-    padding-bottom: 63px;
+  display: flex;
+  align-items: center;
     padding-left: 24px;
     padding-right: 24px;
 

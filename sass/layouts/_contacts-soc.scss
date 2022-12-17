@@ -23,6 +23,11 @@
     margin-bottom: 20px;
     text-align: center;
 
+    @media screen and (min-width: 1200px) {
+    
+            text-align: left;
+        }
+
 }
 
 .contacts-soc-list {
@@ -31,6 +36,13 @@
     justify-content: center;
 
     margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+    
+            justify-content: flex-start;
+
+            margin-bottom: 0;
+        }
 
 
 }

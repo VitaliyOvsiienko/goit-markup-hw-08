@@ -1,6 +1,9 @@
 .subscribe-btn {
 
-margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
    
     color: #FFFFFF;
     background-color: var(--primery-accent);
@@ -18,13 +21,10 @@ margin-left: 20px;
     border: none;
 
     @media screen and (max-width: 1200px) {
-
-        display: block;
-
+    
         margin: 0 auto;
  
-          
-        }
+}
 
     
 

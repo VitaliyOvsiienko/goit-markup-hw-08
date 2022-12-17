@@ -1,3 +1,20 @@
+.header {
+
+    border-bottom: 1px solid #ECECEC;
+
+    padding-top: 19px;
+    padding-bottom: 19px;
+
+    @media screen and (min-width: 1200px) {
+
+        padding-top: 24px;
+            padding-bottom: 24px;
+    
+           
+        }
+
+}
+
 .header-container {
 
 
@@ -6,12 +23,3 @@
 
 }
 
-.header {
-    
-    border-bottom: 1px solid #ECECEC;
-
-    padding-top: 21px;
-    padding-bottom: 21px;
-
-  
-}
